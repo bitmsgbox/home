@@ -1,0 +1,58 @@
+@import '../../styles/_variables';
+@import '../../styles/responsive.scss';
+
+.header {
+  padding: 39px 0;
+}
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  a {
+    margin: 0 8px;
+    color: #333;
+
+    &:visited {
+      color: #333;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color-lighter;
+    }
+
+    &.activeLink {
+      color: $primary-color-lighter;
+    }
+  }
+}
+
+.mobileNavContainer {
+  overflow: hidden;
+  transition: max-height 500ms;
+}
+
+.logo {
+  height: 44px;
+}
+
+@include mq($from: xs, $until: sm) {
+  .nav {
+    margin-left: 5%;
+    padding-left: 2px;
+    a {
+      display: block;
+      margin: 16px 0;
+      // margin-top: 16px;
+      // &:first-child {
+      //   margin-top: 0;
+      // }
+    }
+  }
+}

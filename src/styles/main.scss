@@ -1,0 +1,27 @@
+@import 'normalize.css';
+@import '@swordlib/react-responsive/dist/index.css';
+@import './variables';
+
+html {
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+}
+
+body {
+  background-color: $main-bg-color;
+  color: #797283;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PT Serif;
+  line-height: 43px;
+  color: #1E1C21;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,167 @@
+@import '../styles/_variables';
+@import '../styles/responsive.scss';
+
+.shadow-img-box {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  font-size: 32px;
+  color: #1E1C21;
+}
+
+.subTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Inter;
+}
+
+.appScreenshot {
+  @extend .shadow-img-box;
+  margin-top: 16px;
+  max-width: 50%;
+}
+.header {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  padding-bottom: 30px;
+}
+.featureImg {
+  max-width: 100%;
+  @extend .shadow-img-box;
+}
+.featureIntro {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1E1C21;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 16px;
+  }
+}
+.featureItem {
+  padding: 50px 0;
+}
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.guide {
+  padding: 65px 5%;
+  display: flex;
+  background-color: #2e60ff;
+  color: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+.guideText {
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 32px;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.startButtons {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  a {
+    font-size: 18px;
+    background-color: #ffffff;
+    width: 184px;
+    border-radius: 4px;
+    height: 54px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    color: $primary-color-lighter;
+    margin-top: 16px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+
+// small screen
+@include mq($from: xs, $until: md) {
+  .title {
+    font-size: 20px;
+  }
+  .subTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .appScreenshot {
+    max-width: 90%;
+  }
+  .featureItem {
+    padding: 25px 0;
+  }
+  .featureImg {
+    max-width: 80%;
+  }
+  .featureCol {
+    text-align: center;
+  }
+  .featureIntro {
+    h2 {
+      font-size: 18px;
+    }
+  
+    p {
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .container {
+    display: block;
+    width: 80%;
+  }
+  .guide {
+    display: block;
+  }
+  .guideText {
+    text-align: center;
+  }
+  .startButtons {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+// larger screen
+@include mq($from: md) {
+  .appScreenshot {
+    max-width: 70%;
+  }
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
