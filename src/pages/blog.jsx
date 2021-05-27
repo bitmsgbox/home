@@ -1,16 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import * as styles from './blog.module.scss'
 
-export default function Home({ data }) {
+export default function Blog({ data }) {
   return (
     <Layout>
-      <div>
-        <h1
-        >
-          Amazing Pandas Eating Things
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <div className={styles.container}>
+        {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4>s */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link

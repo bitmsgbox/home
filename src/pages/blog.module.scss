@@ -1,0 +1,13 @@
+@import '../styles/responsive.scss';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+@include mq($from: xs, $until: sm) {
+  .container {
+    padding: 0 5%;
+  }
+}

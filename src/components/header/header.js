@@ -6,12 +6,15 @@ import logo from "../../assets/images/logo-with-title.svg"
 import mobileNavIcon from '../../assets/images/mobile-nav-menu.svg'
 import closeMobileNavIcon from '../../assets/images/close-mobile-nav-menu.svg'
 import * as styles from "./header.module.scss"
-import { APP_LINK, BLOG_LINK } from "../../constant/links"
+import { APP_LINK } from "../../constant/links"
 
 const Nav = () => (
   <nav className={styles.nav}>
     <Link to="/" activeClassName={styles.activeLink}>
       首页
+    </Link>
+    <Link to="/doc/getting-started" activeClassName={styles.activeLink}>
+      文档
     </Link>
     <a href={APP_LINK} target="_blank">App</a>
     <Link to="/blog" activeClassName={styles.activeLink}>

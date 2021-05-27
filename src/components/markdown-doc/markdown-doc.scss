@@ -1,0 +1,25 @@
+@import '../../styles/responsive.scss';
+
+.markdown-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  .title {
+    text-align: center;
+  }
+}
+
+.gatsby-highlight {
+  border-radius: 4px;
+}
+// .gatsby-code-button-container {}
+// .gatsby-code-button {}
+// .gatsby-code-button-icon {}
+// .gatsby-code-button-toaster {}
+// .gatsby-code-button-toaster-text {}
+
+@include mq($from: xs, $until: sm) {
+  .markdown-body {
+    padding: 0 5%;
+  }
+}

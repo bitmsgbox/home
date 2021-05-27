@@ -1,6 +1,6 @@
 ---
-title: "First release"
+title: "比特信箱正式上线啦"
 date: "2021-05-27"
 ---
 
-First release
+比特信箱正式上线啦

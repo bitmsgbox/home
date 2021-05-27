@@ -20,8 +20,42 @@ module.exports = {
     //         path: `${__dirname}/static/images`,
     //     },
     // },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ]
+      }
+    },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // Customize the prompt used in shell output
+              // Values below are default
+              prompt: {
+                user: "root",
+                host: "host",
+                global: false,
+              },
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     // {
     //     resolve: `gatsby-plugin-manifest`,
