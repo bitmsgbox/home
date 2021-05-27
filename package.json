@@ -27,6 +27,7 @@
     "yarn": "^1.22.10"
   },
   "devDependencies": {
+    "gatsby-transformer-remark": "^4.3.0",
     "prettier": "^2.3.0",
     "sass": "^1.32.12"
   },

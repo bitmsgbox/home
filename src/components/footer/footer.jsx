@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import * as styles from "./footer.module.scss"
 import logo from "../../assets/images/logo-with-title.svg"
-import { BLOG_LINK } from "../../constant/links"
 
 export default function Footer() {
   return (
@@ -33,9 +32,6 @@ export default function Footer() {
           <ul>
             <li>
               <a href="https://www.golang.org/" target="_blank">Golang</a>
-            </li>
-            <li>
-              <a href={BLOG_LINK} target="_blank">Blog</a>
             </li>
             <li>
               <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>

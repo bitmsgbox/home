@@ -14,7 +14,9 @@ const Nav = () => (
       首页
     </Link>
     <a href={APP_LINK} target="_blank">App</a>
-    <a href={BLOG_LINK} target="_blank">博客</a>
+    <Link to="/blog" activeClassName={styles.activeLink}>
+      博客
+    </Link>
   </nav>
 )
 

@@ -6,7 +6,8 @@ import appScreenshot from "../assets/images/app-screenshot.png"
 import basicFeaturePng from "../assets/images/basic-feature.png"
 import twoModePng from "../assets/images/two-mode.png"
 import * as styles from "./index.module.scss"
-import { APP_LINK, GETTING_STARTED__LINK } from "../constant/links"
+import { APP_LINK, } from "../constant/links"
+import { Link } from "gatsby"
 
 function FeatureItem(props) {
   const { xs, sm, md } = Grid.useBreakpoint()
@@ -82,9 +83,9 @@ const IndexPage = () => (
         <a href={APP_LINK} target={"_blank"}>
           免费注册
         </a>
-        <a href={GETTING_STARTED__LINK} target={"_blank"}>
+        <Link to="/doc/getting-started">
           接入说明
-        </a>
+        </Link>
       </div>
     </div>
   </Layout>
