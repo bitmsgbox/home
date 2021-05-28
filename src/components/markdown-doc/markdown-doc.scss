@@ -1,4 +1,4 @@
-@import '../../styles/responsive.scss';
+@import '../../styles/responsive';
 
 .markdown-body {
   max-width: 1200px;
@@ -12,11 +12,16 @@
 .gatsby-highlight {
   border-radius: 4px;
 }
-// .gatsby-code-button-container {}
-// .gatsby-code-button {}
-// .gatsby-code-button-icon {}
-// .gatsby-code-button-toaster {}
-// .gatsby-code-button-toaster-text {}
+.gatsby-code-button-container {}
+.gatsby-code-button {}
+.gatsby-code-button-icon {
+  fill: #8CC8A5;
+}
+.gatsby-code-button-toaster {}
+.gatsby-code-button-toaster-text {
+  fill: red;
+  color: red;
+}
 
 @include mq($from: xs, $until: sm) {
   .markdown-body {

@@ -20,6 +20,8 @@ module.exports = {
     //         path: `${__dirname}/static/images`,
     //     },
     // },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -30,17 +32,16 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590,
+              maxWidth: 1000,
             },
           },
-        ]
-      }
-    },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
+          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-code-buttons`,
+            options: {
+              tooltipText: 'Copy'
+            }
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -53,10 +54,9 @@ module.exports = {
               },
             },
           },
-        ],
-      },
+        ]
+      }
     },
-    `gatsby-plugin-sharp`,
     // {
     //     resolve: `gatsby-plugin-manifest`,
     //     options: {
