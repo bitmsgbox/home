@@ -70,6 +70,7 @@ module.exports = {
     //     },
     // },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-no-sourcemaps`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

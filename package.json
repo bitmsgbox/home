@@ -32,6 +32,7 @@
     "yarn": "^1.22.10"
   },
   "devDependencies": {
+    "gatsby-plugin-no-sourcemaps": "^3.6.0",
     "gatsby-remark-code-buttons": "^2.0.7",
     "gatsby-remark-images": "^5.3.0",
     "gatsby-transformer-remark": "^4.3.0",
