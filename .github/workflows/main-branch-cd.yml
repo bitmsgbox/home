@@ -5,7 +5,7 @@ name: build and delopy test environment
 
 on:
   push:
-    branches: [ test ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -37,31 +37,31 @@ jobs:
       - name: remove app
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: ${{ secrets.TEST_REMOTE_HOST }}
-          username: ${{ secrets.TEST_REMOTE_USER }}
-          key: ${{ secrets.TEST_SERVER_SSH_KEY }}
-          script: rm -rf ${{ secrets.TEST_REMOTE_APP_TARGET }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: rm -rf ${{ secrets.REMOTE_APP_TARGET }}
       - name: upload app
         # You may pin to the exact commit or the version.
         uses: easingthemes/ssh-deploy@191986574c0735ffad7ae1a297a414d6e6f95375
   #       uses: easingthemes/ssh-deploy@v2.1.5
         with:
           # Private Key
-          SSH_PRIVATE_KEY: ${{ secrets.TEST_SERVER_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # Remote host
-          REMOTE_HOST: ${{ secrets.TEST_REMOTE_HOST }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # Remote user
-          REMOTE_USER: ${{ secrets.TEST_REMOTE_USER }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
           # Source directory
           SOURCE: public/
           # Target directory, example /home/**/web/
-          TARGET: ${{ secrets.TEST_REMOTE_APP_TARGET }}
+          TARGET: ${{ secrets.REMOTE_APP_TARGET }}
       # Invalidate app in Cloudfront
       - name: Invalidate panel in cloudfront
         uses: chetan/invalidate-cloudfront-action@v1.3
         env:
-          DISTRIBUTION: ${{ secrets.TEST_APP_CF_ID }}
+          DISTRIBUTION: ${{ secrets.APP_CF_ID }}
           PATHS: '/*'
           AWS_REGION: 'ap-northeast-1'
-          AWS_ACCESS_KEY_ID: ${{ secrets.TEST_CF_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.TEST_CF_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CF_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CF_SECRET_ACCESS_KEY }}
