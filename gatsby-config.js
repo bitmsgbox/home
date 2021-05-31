@@ -76,7 +76,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-QY87EJ0GB4", // Google Analytics id for goodguy.site
+          "G-EVZNPZCXQ5", // Google Analytics id for bitmsgbox.com
         ],
         gtagConfig: {
           anonymize_ip: true,

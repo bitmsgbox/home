@@ -1,1 +1,1 @@
-export const APP_LINK = 'https://app.goodguy.site'
+export const APP_LINK = 'https://app.bitmsgbox.com'

@@ -57,7 +57,7 @@ jobs:
           # Target directory, example /home/**/web/
           TARGET: ${{ secrets.REMOTE_APP_TARGET }}
       # Invalidate app in Cloudfront
-      - name: Invalidate panel in cloudfront
+      - name: Invalidate app in cloudfront
         uses: chetan/invalidate-cloudfront-action@v1.3
         env:
           DISTRIBUTION: ${{ secrets.APP_CF_ID }}

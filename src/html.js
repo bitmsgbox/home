@@ -12,7 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script async id="bmbclientloader" data-m="merchantlpbkH70s_is" src="https://client.goodguy.site/load-client.min.js"></script>
+        <script async id="bmbclientloader" data-m="merchanth9rP5qvL_KA" src="https://client.bitmsgbox.com/load-client.min.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
