@@ -21,7 +21,7 @@ export default function Blog({ data }) {
                   — {node.frontmatter.date}
                 </span>
               </h3>
-              <p>{node.excerpt}</p>
+              <p className={styles.excerpt}>{node.excerpt}</p>
             </Link>
           </div>
         ))}
