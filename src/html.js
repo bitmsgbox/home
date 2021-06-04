@@ -13,6 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <script async id="bmbclientloader" data-m="merchanth9rP5qvL_KA" src="https://client.bitmsgbox.com/load-client.min.js"></script>
+        <script data-ad-client="ca-pub-1013984740083181" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
