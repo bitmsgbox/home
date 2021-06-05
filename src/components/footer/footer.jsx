@@ -47,7 +47,7 @@ export default function Footer() {
               </Link>
             </li> */}
             <li>
-              <a href="/privacy.txt" target="_blank">隐私政策</a>
+              <a href="/doc/privacy" target="_blank">隐私政策</a>
             </li>
             <li>
               <a href="/termsOfService.txt" target="_blank">服务条款</a>
