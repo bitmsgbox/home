@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: build and delopy test environment
+name: delopy main environment
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
 #           
 #     deploy
       - name: remove app
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@1a8b3784eaa665f677fa114edd5683bb6a6bfaa8
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
@@ -57,8 +57,8 @@ jobs:
           # Target directory, example /home/**/web/
           TARGET: ${{ secrets.REMOTE_APP_TARGET }}
       # Invalidate app in Cloudfront
-      - name: Invalidate app in cloudfront
-        uses: chetan/invalidate-cloudfront-action@v1.3
+      - name: Invalidate cloudfront
+        uses: chetan/invalidate-cloudfront-action@819473e1ccf40ea3178b75c8f31ae375fb45d388
         env:
           DISTRIBUTION: ${{ secrets.APP_CF_ID }}
           PATHS: '/*'
