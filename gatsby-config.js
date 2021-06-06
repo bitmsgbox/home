@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `比特信箱`,
-    description: ``,
+    description: `中小平台IM解决方案`,
     author: `bitmsgbox team`,
   },
   plugins: [
@@ -13,13 +13,6 @@ module.exports = {
         path: `${__dirname}/data`,
       },
     },
-    // {
-    //     resolve: `gatsby-source-filesystem`,
-    //     options: {
-    //         name: `images`,
-    //         path: `${__dirname}/static/images`,
-    //     },
-    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -57,18 +50,6 @@ module.exports = {
         ]
       }
     },
-    // {
-    //     resolve: `gatsby-plugin-manifest`,
-    //     options: {
-    //         name: `bitmsgbox(比特信箱)`,
-    //         short_name: `bitmsgbox`,
-    //         start_url: `/`,
-    //         background_color: `#663399`,
-    //         theme_color: `#FF54AC`,
-    //         display: `minimal-ui`,
-    //         icon: `${__dirname}/static/images/logo512.png`, // This path is relative to the root of the site.
-    //     },
-    // },
     `gatsby-plugin-sass`,
     `gatsby-plugin-no-sourcemaps`,
     {
