@@ -41,16 +41,11 @@ export default function Footer() {
         <ul className={styles.colInfo}>
           <h4>服务支持</h4>
           <ul>
-            {/* <li>
-              <Link to="/contact">
-                联系我们
-              </Link>
-            </li> */}
             <li>
-              <a href="/doc/privacy" target="_blank">隐私政策</a>
+              <Link to="/doc/privacy">隐私政策</Link>
             </li>
             <li>
-              <a href="/termsOfService.txt" target="_blank">服务条款</a>
+              <Link to="/doc/terms">服务条款</Link>
             </li>
           </ul>
         </ul>
