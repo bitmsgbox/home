@@ -35,7 +35,7 @@ jobs:
 #           
 #     deploy
       - name: remove app
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@1a8b3784eaa665f677fa114edd5683bb6a6bfaa8
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
@@ -58,7 +58,7 @@ jobs:
           TARGET: ${{ secrets.REMOTE_APP_TARGET }}
       # Invalidate app in Cloudfront
       - name: Invalidate panel in cloudfront
-        uses: chetan/invalidate-cloudfront-action@v1.3
+        uses: chetan/invalidate-cloudfront-action@819473e1ccf40ea3178b75c8f31ae375fb45d388
         env:
           DISTRIBUTION: ${{ secrets.APP_CF_ID }}
           PATHS: '/*'
