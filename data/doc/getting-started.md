@@ -11,7 +11,7 @@ date: "2021-05-27"
 
 ## 接入服务
 
-打开[商户管理界面](https://https://panel.bitmsgbox.com/#/merchant/list), 注册并登录后，界面如果下图所示:
+打开[商户管理界面](https://panel.bitmsgbox.com/#/merchant/list), 注册并登录后，界面如果下图所示:
 
 ![goodguy](./images/getting-started/merchant-screenshot.png)
 
