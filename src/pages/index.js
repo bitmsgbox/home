@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Grid } from "@swordlib/react-responsive"
-import ScriptTag from 'react-script-tag'
 import appScreenshot from "../assets/images/app-screenshot.png"
 import basicFeaturePng from "../assets/images/basic-feature.png"
 import twoModePng from "../assets/images/two-mode.png"
