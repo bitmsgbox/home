@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Grid } from "@swordlib/react-responsive"
+import ScriptTag from 'react-script-tag'
 import appScreenshot from "../assets/images/app-screenshot.png"
 import basicFeaturePng from "../assets/images/basic-feature.png"
 import twoModePng from "../assets/images/two-mode.png"
@@ -87,6 +88,9 @@ const IndexPage = () => (
           接入说明
         </Link>
       </div>
+    </div>
+    <div>
+      <ScriptTag data-cfasync="false" src="https://www.onclickalgo.com/a/display.php?r=4641519" />
     </div>
   </Layout>
 )
