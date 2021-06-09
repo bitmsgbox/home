@@ -89,9 +89,6 @@ const IndexPage = () => (
         </Link>
       </div>
     </div>
-    <div>
-      <ScriptTag data-cfasync="false" src="https://www.onclickalgo.com/a/display.php?r=4641519" />
-    </div>
   </Layout>
 )
 
