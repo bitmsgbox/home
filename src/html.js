@@ -14,7 +14,6 @@ export default function HTML(props) {
         <meta name="robots" content="noindex" />
         {props.headComponents}
         <script async id="bmbclientloader" data-m="merchantlpbkH70s_is" src="https://client.goodguy.site/load-client.min.js"></script>
-        <script data-ad-client="ca-pub-1013984740083181" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
